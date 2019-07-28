@@ -4,14 +4,16 @@ describe('Message item', () => {
    const dateAdded = Date.now().toString();
    const author = 'SomeAuthor';
    const content = 'Lorem ipsum sic dolor amet';
+   const id = 1;
    let message;
 
-   beforeEach(() =>  message = new Message({dateAdded, author, content}));
+   beforeEach(() =>  message = new Message({dateAdded, author, content, id}));
 
     it('Has the author, content and date', () => {
-      expect(message.author).toEqual(author)
-      expect(message.dateAdded).toEqual(dateAdded)
-      expect(message.content).toEqual(content)
+      expect(message.id).toEqual(id);
+      expect(message.author).toEqual(author);
+      expect(message.dateAdded).toEqual(dateAdded);
+      expect(message.content).toEqual(content);
     });
 
    describe('editMessage()', () => {

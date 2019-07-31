@@ -1,0 +1,15 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+$widget-header-background: $gallery;
+$widget-header-color: $oxford-blue;
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  background-color: $gallery;
+  color: $widget-header-color;
+}

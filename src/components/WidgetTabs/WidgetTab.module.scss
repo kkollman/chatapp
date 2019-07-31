@@ -5,6 +5,7 @@
 $tab-active-background: $white;
 $tab-inactive-background: $gallery;
 $tab-border-color: $iron;
+$tab-text-color: $oxford-blue;
 
 .tab {
   background: $tab-inactive-background;
@@ -14,6 +15,7 @@ $tab-border-color: $iron;
   align-items: center;
   padding: 28px;
   border-bottom: 2px solid $tab-border-color;
+  color: $tab-text-color;
 }
 
 .active {

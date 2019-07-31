@@ -1,23 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+/*
+  If I have identified properly, the font used in the project seems to be Circular LL. It is an expensive one though, so for this task I'll stick to Rubik which seems fairly similar to Circular and is free and available at Google Fonts
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,500&display=swap');
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 
 /*
   Font weights
  */
+$light: 300;
 $regular: 400;
-$bold: 700;
+$medium: 500;
 
 /*
   Font sizes
  */
-$font-size-big: 28px;
-$font-size-normal: 14px;
-$font-size-huge: 36px;
+$font-size-big: 23px;
+$font-size-normal: 15px;
+$font-size-huge: 28px;

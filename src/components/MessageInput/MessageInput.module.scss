@@ -22,6 +22,7 @@ $input-border-color: $regent-gray;
   border: 1px solid $input-border-color;
   color: $input-text-color;
   transition: opacity $transition-quick;
+  resize: none;
 
   &:focus {
     outline: none;

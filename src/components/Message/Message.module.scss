@@ -1,0 +1,53 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+/*
+  Although sometimes these variables refer to the same color right now, I'd still leave it as is - for potential future changes;
+ */
+
+$edited-mark-color: $regent-gray;
+$deleted-color: $regent-gray;
+$date-color: $regent-gray;
+$header-author-color: $oxford-blue;
+$message-content-color: $oxford-blue;
+
+.message {
+  font-size: $font-size-normal;
+  padding: 0 0.5em 1em 0.5em;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid deepskyblue;
+}
+
+.edited-mark {
+  color: $edited-mark-color;
+}
+
+.deleted .message-content, .system .message-content {
+  color: $deleted-color;
+}
+
+.message-header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.message-header-author {
+  color: $header-author-color;
+  font-weight: $medium;
+  margin: 0 0 2px;
+}
+
+.message-header-date {
+  font-weight: $light;
+  color: $date-color;
+  margin-left: 1em;
+}
+
+.message-content {
+  font-weight: $light;
+  color: $message-content-color;
+  line-height: $font-size-big;
+  margin: 0;
+}

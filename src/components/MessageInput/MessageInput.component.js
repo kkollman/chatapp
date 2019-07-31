@@ -7,7 +7,8 @@ import styles from './MessageInput.module.scss';
 const MessageInput = ({ placeholder, isActive }) => {
   return (
     <div className={styles['message-input-wrapper']}>
-      <input
+      <textarea
+        rows={1}
         className={cls(styles.input, !isActive && styles['input--disabled'])}
         placeholder={placeholder}
         disabled={!isActive}

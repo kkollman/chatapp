@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import styles from './MessageInput.module.scss';
 
-const MessageInput = ({ placeholder, isActive }) => {
+const MessageInput = ({ placeholder, isActive = true }) => {
   return (
     <div className={styles['message-input-wrapper']}>
       <textarea

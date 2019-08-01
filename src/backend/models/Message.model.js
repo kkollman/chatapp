@@ -1,5 +1,5 @@
 class MessageModel {
-  constructor ({ author, content = '', dateAdded, id}) {
+  constructor({ author, content = '', dateAdded, id }) {
     this.id = id;
     this.author = author;
     this.content = content;
@@ -13,7 +13,7 @@ class MessageModel {
     this.isEdited = true;
   }
 
-  deleteMessage(){
+  deleteMessage() {
     this.content = null;
     this.isEdited = true;
     this.isDeleted = true;

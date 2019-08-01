@@ -16,6 +16,7 @@ $tab-text-color: $oxford-blue;
   padding: 28px;
   border-bottom: 2px solid $tab-border-color;
   color: $tab-text-color;
+  cursor: pointer;
 }
 
 .active {

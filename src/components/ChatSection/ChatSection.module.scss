@@ -1,0 +1,10 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+$chat-section-background: $white;
+
+.chat {
+  flex: 1;
+  background: $chat-section-background;
+}

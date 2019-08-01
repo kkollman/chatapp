@@ -5,6 +5,7 @@
 $input-placeholder-color: $regent-gray;
 $input-text-color: $oxford-blue;
 $input-border-color: $regent-gray;
+$input-wrapper-background: $white;
 
 .message-input-wrapper {
   width: 100%;
@@ -12,6 +13,7 @@ $input-border-color: $regent-gray;
   padding: 1em;
   display: flex;
   flex-flow: row nowrap;
+  background: $input-wrapper-background;
 }
 
 .input {

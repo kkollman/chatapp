@@ -1,0 +1,22 @@
+@import './styles/typography';
+@import './styles/colors';
+@import './styles/variables';
+
+$app-background: $mine-shaft;
+$chat-widget-background: $gallery;
+
+.App {
+  display: flex;
+  justify-content: center;
+  background: $app-background;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chat-widget {
+  width: 100%;
+  max-width: 400px;
+  background: $chat-widget-background;
+  display: flex;
+  flex-flow: column;
+}

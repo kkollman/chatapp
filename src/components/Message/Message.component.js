@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Message.module.scss';
 
-const Message = ({ author, date, content, isEdited, isDeleted }) => {
+const Message = ({ author, dateAdded, content, isEdited, isDeleted }) => {
   const isSystemMessage = author === 'system';
 
   return (
@@ -19,7 +19,7 @@ const Message = ({ author, date, content, isEdited, isDeleted }) => {
       <header className={styles['message-header']}>
         <p className={styles['message-header-author']}>
           {author}
-          <span className={styles['message-header-date']}>{date}</span>
+          <span className={styles['message-header-date']}>{dateAdded}</span>
         </p>
       </header>
       <div>
@@ -36,7 +36,7 @@ const Message = ({ author, date, content, isEdited, isDeleted }) => {
 
 Message.propTypes = {
   author: PropTypes.string,
-  date: PropTypes.string,
+  dateAdded: PropTypes.string,
   content: PropTypes.string,
   isEdited: PropTypes.bool,
   isDeleted: PropTypes.bool,

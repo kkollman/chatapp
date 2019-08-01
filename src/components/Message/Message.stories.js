@@ -17,7 +17,7 @@ stories.add('Regular usage', () => (
   <div style={{ maxWidth: 500, background: '#fafafa', padding: '3em' }}>
     <Message
       author={text('Author', 'Ed Edwards')}
-      date={text('Date', '15:12')}
+      dateAdded={text('Date', '15:12')}
       content={text(
         'Message content',
         "He's nervous, but on the surface he looks calm and ready\n" +

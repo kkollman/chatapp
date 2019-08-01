@@ -6,6 +6,7 @@
     "@storybook/addon-centered": "^5.1.9",
     "@storybook/addon-knobs": "^5.1.9",
     "classnames": "^2.2.6",
+    "faker": "^4.1.0",
     "lodash": "^4.17.11",
     "mobx": "^5.11.0",
     "node-sass": "^4.12.0",

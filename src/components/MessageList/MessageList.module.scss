@@ -1,0 +1,12 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+$message-list-background: $white;
+
+.message-list {
+  max-width: 350px;
+  background: $message-list-background;
+  flex: 1;
+  overflow-y: auto;
+}

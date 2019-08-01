@@ -1,0 +1,25 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+$participant-divider-color: $iron;
+$participant-name-color: $oxford-blue;
+$participant-background-hover: $wild-sand;
+
+.participant {
+  display: flex;
+  padding: 23px;
+  border-bottom: 2px solid $participant-divider-color;
+  transition: background-color $transition-quick;
+
+  &:hover {
+    background-color: $participant-background-hover;
+  }
+}
+
+.participant-name {
+  padding: 0;
+  margin: 0;
+  font-size: $font-size-normal;
+  color: $participant-name-color;
+}

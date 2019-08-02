@@ -8,6 +8,7 @@ const MessageInput = ({ placeholder, isActive = true }) => {
   return (
     <div className={styles['message-input-wrapper']}>
       <textarea
+        id={'input'}
         rows={1}
         className={cls(styles.input, !isActive && styles['input--disabled'])}
         placeholder={placeholder}

@@ -9,7 +9,8 @@ import ParticipantsList from '../ParticipantsList/ParticipantsList.container';
 const ChatSection = ({ activeSection }) => {
   return (
     <div className={styles.chat}>
-      {activeSection === 'chat' ? <MessageList /> : <ParticipantsList />}
+      {activeSection === 'chat' && <MessageList />}
+      {activeSection === 'participants' && <ParticipantsList />}
     </div>
   );
 };

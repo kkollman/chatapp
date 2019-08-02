@@ -11,6 +11,7 @@ const propsMapper = ({ uiStore }) => {
 
 const ChatSectionContainer = compose(
   inject('uiStore'),
+  observer,
   withProps(propsMapper),
   observer,
 )(ChatSection);

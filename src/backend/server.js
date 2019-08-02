@@ -37,11 +37,7 @@ wsServer.on('request', request => {
 
   console.log('New user connected');
 
-  if (chat.length > 0) {
-    connection.sendUTF(
-      JSON.stringify({ type: 'history', data: JSON.stringify(chat) }),
-    );
-  }
+  connection.sendUTF(JSON.stringify({ type: 'history', chat, activeUsers }));
 
   connection.on('message', function(message) {
     if (message.type === 'utf8') {
@@ -65,16 +61,10 @@ wsServer.on('request', request => {
         });
 
         chat.push(message);
-
         // broadcast message to all connected users
-        const response = JSON.stringify({
-          type: 'message',
-          data: { chat, users, activeUsers },
+        connections.forEach(user => {
+          user.sendUTF(JSON.stringify({ type: 'history', chat, activeUsers }));
         });
-
-        for (let i = 0; i < connections.length; i++) {
-          connections[i].sendUTF(response);
-        }
       }
     }
   });

@@ -1,31 +1,24 @@
 import React from 'react';
 import styles from './App.module.scss';
-import { Provider } from 'mobx-react';
 
-import RootStore from './stores/RootStore';
 import WidgetHeader from './components/WidgetHeader/WidgetHeader.component';
 import WidgetTabs from './components/WidgetTabs/WidgetTabs.component';
 import ChatSectionContainer from './components/ChatSection/ChatSection.container';
-import MessageInput from './components/MessageInput/MessageInput.component';
-
-const AppStore = new RootStore();
+import MessageInputContainer from './components/MessageInput/MessageInput.container';
 
 function App() {
-  window.rootStore = AppStore;
   return (
     <div className={styles.App}>
-      <Provider {...AppStore}>
-        <React.Fragment>
-          <div className={styles['chat-widget']}>
-            <WidgetHeader title={'Status Meeting Standup'} />
-            <div className={styles['chat-tabs']}>
-              <WidgetTabs />
-            </div>
-            <ChatSectionContainer />
-            <MessageInput />
+      <React.Fragment>
+        <div className={styles['chat-widget']}>
+          <WidgetHeader title={'Status Meeting Standup'} />
+          <div className={styles['chat-tabs']}>
+            <WidgetTabs />
           </div>
-        </React.Fragment>
-      </Provider>
+          <ChatSectionContainer />
+          <MessageInputContainer />
+        </div>
+      </React.Fragment>
     </div>
   );
 }

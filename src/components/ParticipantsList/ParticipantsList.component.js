@@ -9,7 +9,7 @@ const ParticipantsList = ({ participants }) => {
   return (
     <section className={styles['participants-list']}>
       {participants.map(participant => (
-        <Participant name={participant} />
+        <Participant name={participant.userName} />
       ))}
     </section>
   );

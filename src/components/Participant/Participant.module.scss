@@ -9,7 +9,7 @@ $participant-background-hover: $wild-sand;
 .participant {
   display: flex;
   padding: 23px;
-  border-bottom: 2px solid $participant-divider-color;
+  border-bottom: 1px solid $participant-divider-color;
   transition: background-color $transition-quick;
 
   &:hover {

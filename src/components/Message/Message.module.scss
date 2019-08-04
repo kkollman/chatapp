@@ -39,13 +39,13 @@ $message-content-color: $oxford-blue;
 }
 
 .message-header-date {
-  font-weight: $light;
+  font-weight: $regular;
   color: $date-color;
   margin-left: 1em;
 }
 
 .message-content {
-  font-weight: $light;
+  font-weight: $regular;
   color: $message-content-color;
   line-height: $font-size-big;
   margin: 0;

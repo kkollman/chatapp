@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.module.scss';
 
 import WidgetHeader from './components/WidgetHeader/WidgetHeader.component';
-import WidgetTabs from './components/WidgetTabs/WidgetTabs.component';
+import WidgetTabs from './components/WidgetTabs/WidgetTabs.container';
 import ChatSectionContainer from './components/ChatSection/ChatSection.container';
 import MessageInputContainer from './components/MessageInput/MessageInput.container';
 

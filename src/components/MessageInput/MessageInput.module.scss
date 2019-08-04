@@ -20,12 +20,12 @@ $input-wrapper-background: $white;
   flex: 1;
   font-size: $font-size-normal;
   padding: 0.8em;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   border: 1px solid $input-border-color;
   color: $input-text-color;
   transition: opacity $transition-quick;
   resize: none;
-  font-weight: $light;
+  font-weight: $regular;
 
   &:focus {
     outline: none;

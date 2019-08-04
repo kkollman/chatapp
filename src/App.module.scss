@@ -11,6 +11,7 @@ $chat-widget-background: $gallery;
   background: $app-background;
   height: 100vh;
   overflow: hidden;
+  flex-flow: column;
 }
 
 .chat-widget {
@@ -19,4 +20,5 @@ $chat-widget-background: $gallery;
   background: $chat-widget-background;
   display: flex;
   flex-flow: column;
+  flex: 1;
 }

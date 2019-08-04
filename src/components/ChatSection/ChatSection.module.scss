@@ -7,4 +7,6 @@ $chat-section-background: $white;
 .chat {
   flex: 1;
   background: $chat-section-background;
+  padding: 20px;
+  overflow-y: auto;
 }

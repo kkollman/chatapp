@@ -6,6 +6,10 @@ import styles from './Message.module.scss';
 
 const Message = ({ author, dateAdded, content, isEdited, isDeleted }) => {
   const isSystemMessage = author === 'system';
+  const timeAdded = () => {
+    const date = new Date(Date.parse(dateAdded));
+    return `${date.getHours()}:${date.getMinutes()}`;
+  };
 
   return (
     <article
@@ -19,7 +23,7 @@ const Message = ({ author, dateAdded, content, isEdited, isDeleted }) => {
       <header className={styles['message-header']}>
         <p className={styles['message-header-author']}>
           {author}
-          <span className={styles['message-header-date']}>{dateAdded}</span>
+          <span className={styles['message-header-date']}>{timeAdded()}</span>
         </p>
       </header>
       <div>

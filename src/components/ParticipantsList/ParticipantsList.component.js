@@ -8,9 +8,10 @@ import styles from './ParticipantsList.module.scss';
 const ParticipantsList = ({ participants }) => {
   return (
     <section className={styles['participants-list']}>
-      {participants.map(participant => (
-        <Participant name={participant.userName} />
-      ))}
+      {participants.map(
+        participant =>
+          participant.userName && <Participant name={participant.userName} />,
+      )}
     </section>
   );
 };

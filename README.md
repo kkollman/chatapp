@@ -10,7 +10,7 @@ I have used mobx to control app's state, which is why I've introduced containers
 
 Each separate component has storybook `stories` set up with `knobs` addon to introduce testing different props. 
 
-Styling is done via `sass-modules`, with couple of base files to ensure typography, colors and transition times are the same across the app. I have used the `Montserrat` font as it seemed to be the closest free alternative to Circular, presented in designs. I've tried a couple of different fonts though, and none have presented that geometric, very symmetric feel as Circular.
+Styling is done via `sass-modules`, with couple of base files to ensure typography, colors and transition times are the same across the app.
 
 The project has been bootstrapped with `create-react-app`.
 
